@@ -1,0 +1,104 @@
+﻿@{
+
+
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Share/LayoutPage.cshtml";
+
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <title></title>
+</head>
+<body>
+
+
+    <a href="/Home/CartItems"><img src=" ~/images/cart.png" /></a>@ViewBag.MyCarts
+
+
+    <div class="tab-content" style="display:block;">
+        <div class="items">
+            <div class="cl">&nbsp;</div>
+            <ul>
+                <li>
+                    <div class="image"> <a href="#"><img src="~/images/church-wedding-decorations-2.jpg" alt="" style="width:100%" /></a> </div>
+                    <p>
+                        Item Number: <span>125516</span><br />
+                        Product Name: <span>Weeding decor</span><br />
+                        Product Description: Evening events,a weeding decor with style <a href="#"></a>
+                    <p class="price"> Price: <strong> from  10000.00</strong></p>
+                    <div>
+                        @Html.ActionLink("View Details", "Products", new { ItemNum = "125516" })
+                        @Html.ActionLink("Add To Cart", "AddToCart", new { ItemNum = "125516" })
+                      
+                    </div>
+                </li>
+                <li>
+                    <div class="image"> <a href="#"><img src="~/images/marry.jpg" alt="" style="width:100%" /></a> </div>
+                    <p>
+                        Item Number: <span>125517</span><br />
+                        Product Name: <span>Weeding decor 2</span><br />
+                        Product Description:romantic-design-luxury-wedd and white weeding decoration <a href="#"></a>
+
+                    <p class="price"> Price: <strong> 12000.00</strong></p>
+                    <div>
+                        @Html.ActionLink("View Details", "Products", new { ItemNum = "125517" })
+                        @Html.ActionLink("Add To Cart", "AddToCart", new { ItemNum = "125517" })
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="image"> <a href="#"><img src="~/images/wedding stage decoration.jpg" alt="" style="width:100%" /></a> </div>
+                    <p>
+                        Item Number: <span>125518</span><br />
+                        Product Name: <span>Party event decor 2</span><br />
+                        Product Description: part event for afte parties and formal parties <a href="#"></a>
+
+
+                    <p class="price"> Price: <strong>18000.00</strong></p>
+                    <div>
+                        @Html.ActionLink("View Details", "Products", new { ItemNum = "125518" })
+                        @Html.ActionLink("Add To Cart", "AddToCart", new { ItemNum = "125518" })
+                    </div>
+                </li>
+
+                <li>
+                    <div class="image"> <a href="#"><img src="~/images/little kids.jpg" alt="" style="width:100%" /></a> </div>
+                    <p>
+                        Item Number: <span>125519</span><br />
+                        Product Name: <span>Party event decor 1</span><br />
+                        Product Description: part event for afte parties or graduations <a href="#"></a>
+
+                    <p class="price"> Price: <strong>18000.00</strong></p>
+                    <div>@Html.ActionLink("View Details", "Products", new { ItemNum = "1255119" })</div>
+                    @Html.ActionLink("Add To Cart", "AddToCart", new { ItemNum = "1255119" })
+                </li>
+                <li>
+                    <div class="image"> <a href="#"><img src="~/images/black-and-white-dining-area.jpg" alt="" style="width:100%" /></a> </div>
+                    <p>
+                        Item Number: <span>1255110</span><br />
+                        Product Description: weeding decor with an extra suprise for the bride <a href="#"></a>
+                    <p class="price"> Price: <strong>16000.00</strong></p>
+                    <div>
+                        @Html.ActionLink("View Details", "Products", new { ItemNum = "1255110" })
+                        @Html.ActionLink("Add To Cart", "AddToCart", new { ItemNum = "1255110" })
+                    </div>
+
+                </li>
+
+            </ul>
+            <div class="cl">&nbsp;</div>
+        </div>
+    </div>
+
+
+
+    <section id="content1"></section>
+</body>
+</html>

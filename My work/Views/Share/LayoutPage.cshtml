@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("About", "AboutUs", "Home")</li>
+            <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
+            <li>@Html.ActionLink("Product", "Product", "Home")</li>
+            <li>@Html.ActionLink("Full Details", "ProductDetails", "Home")</li>
+            <li>@Html.ActionLink("ContactUs", "ContactUs", "Home")</li>
+           
+
+            
+
+        </ul>
+    </nav>
+
+    </header>
+    @*end of the header*@
+
+    <section id="content">
+        <div style="padding-top:-50px;">
+            <img src="~/Images/Logobig221.png" style="height:70pX;" />
+        </div>
+    </section>
+
+
+            <div id="fixedfooter">
+                <p style="text-align:center">
+                    &copy; @DateTime.Now.Year-Created by NZS
+
+                </p>
+ 
+            </div>
+    @RenderBody()
+</body>
+</html>

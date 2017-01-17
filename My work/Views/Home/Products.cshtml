@@ -1,0 +1,52 @@
+﻿@model My_work.Models.Products
+
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Share/LayoutPage.cshtml";
+}
+
+<h2>Products</h2>
+
+<div>
+    
+    <dl>
+       
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </dt>
+
+            <dt style="text-align:center">
+                @Html.DisplayFor(model => model.ProductName)
+            </dt>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductDiscription)
+            </dt>
+
+            <dt style="text-align:center">
+                @Html.DisplayFor(model => model.ProductDiscription)
+            </dt>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ProPrice)
+            </dt>
+
+            <dt style="text-align:center">
+                @Html.DisplayFor(model => model.ProPrice)
+            </dt>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ItemNumber)
+            </dt>
+
+            <dt style="text-align: center">
+                @Html.DisplayFor(model => model.ItemNumber)
+            </dt>
+        
+    </dl>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Product")
+</p>

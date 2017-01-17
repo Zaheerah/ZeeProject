@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Share/LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <title></title>
+</head>
+<body>
+
+    <div>
+
+        @*Slides*@
+        <img class="mySlides" src="~/images/pro%20pic%203.jpg" style="width:40%">
+        <img class="mySlides" src="~/images/pro%20pic%202.jpg" style="width:40%">
+        <img class="mySlides" src="~/images/pro%20pic%204.jpg" style="width:40%">
+        <img class="mySlides" src="~/images/pro%20pic%205.jpg" style="width:40%">
+        <img class="mySlides" src="~/images/pro%20pic%206.jpg" style="width:40%">
+        <img class="mySlides" src="~/images/pro%20pic%207.jpg" style="width:40%">
+        <img class="mySlides" src="~/images/pro%20pic%208.jpg" style="width:40%">
+    </div>
+
+    <aside>
+        @*info*@
+        <img src="~/images/imageedit_4_4113838747.png" />
+        <p>
+
+            
+
+            redPEPPER events uses only the best caterers for our events!<br />
+            Let us become your preferred catering company of choice for food that is tasty,<br />
+            delicious and enjoyed by all.<br />
+            redPEPPER events not only guarantees a unique taste sensation<br />
+            but can also add an interesting twist<br />
+            to your next function. You could have a themed evening,<br />
+            team building exercise with hands-on sushi lessons, a beautiful high tea, <br />
+            or simply delicious fusion food.</br>
+            A Johannesburg Caterer with a highly organized team will consult with you,<br />
+            tailoring the menu to suit<br />
+            your needs, the occasion and your budget.<br />
+        </p>
+    </aside>
+
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+   
+    <div class="container">
+        @*<header>our index page</header>*@
+
+        <section id="content2">
+            <h1 style="text-align:center; font-size:x-large;"> Our  events </h1>
+            <div class="gallaryHolder">
+
+                <div class="gallery">
+                    <ul>
+                        <li> <img src="~/images/wok2.png" /> </li>
+                        <li> <img src="~/images/party2.png" /></li>
+                        <li><img src="~/images/time2.png" /></li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+    
+
+</body>
+</html>

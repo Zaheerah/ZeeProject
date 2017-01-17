@@ -1,0 +1,143 @@
+﻿@{
+    ViewBag.Title = "ContactUs";
+    Layout = "~/Views/Share/LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <title></title>
+</head>
+<body>
+  
+    <aside class="aside2">
+        <script type="text/javascript">
+            function submit() {
+
+                var name = document.getElementById('name').value
+                var email = document.getElementById('email').value
+
+
+                if (name == "") {
+                    window.alert("Please enter your name.");
+                    name.focus();
+                    return false;
+
+                }
+
+                if (email == "") {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+
+                    //if (email ("", 0) < 0)
+                    //{
+                    //    window.alert("Please enter a valid e-mail address.");
+                    //    email.focus();
+                    //    return false;
+                }
+                if (email.indexOf(".", 0) < 0) {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+
+
+                alert(" Hello " + " " + name + " " + "we will email you soon at" + " " + email);
+            }
+
+        </script>
+
+        <div class="shell">
+
+            <address>
+                <br />
+                117 Hyde lane office Park<br>
+                Hyde Park<br />
+                <abbr title="Phone">P.O Box</abbr>
+                <br />
+                425.555.0100<br />
+                @*<br />*@
+            </address>
+
+        </div>
+       
+
+            <div class="bottom">
+                <strong>Cell:</strong>
+                <a>071-408-1844 (Zaheerah)</a>
+
+                <br />
+
+                <strong>E-mail:</strong>
+                <a href="mailto:Zkamaar@jhb.dvt.co.za">Zkamaar@jhb.dvt.co.za</a>
+            </div>
+
+
+
+            <strong>Cell:</strong>
+            <a>084-605-1925 (Sindiswe)</a>
+
+            <br />
+            <strong>E-mail:</strong>
+            <a href="mailto:Smashinini@jhb.dvt.co.za">Smashinini@jhb.dvt.co.za</a>
+            <br />
+            <br />
+            <strong>Cell:</strong>
+            <a>061-796-8857 (Nqabakazi)</a>
+          
+                <br />
+                <strong>E-mail:</strong>
+                <a href="mailto:Nhlamvana@jhb.dvt.co.za">Nhlamvana@jhb.dvt.co.za</a>
+
+           
+    </aside>
+   
+    <div class="Center">
+
+       
+            <h2>WHERE YOU CAN GET US</h2>
+            @*<img src="~/images/find%20us%20here.png" />*@
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.2608812834905!2d28.02964121436566!3d-26.123035567021062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950cb1caaa20e3%3A0x2334ef8902da3d32!2s117+Hyde+Ln%2C+Sandton%2C+2196!5e0!3m2!1sen!2sza!4v1481701052350" width="560" height="450" frameborder="0" style="border:0"></iframe>
+        </div>
+
+
+
+        <table>
+            <tr>
+                <td>
+
+                    <div id="text">
+                        <div class="table">
+                           
+                                <h2>CONTACT FORM</h2>
+                                <h4 style="display:inline-block;">Name:</h4>
+                                <input type="text" id="name" style="height:25px;width:150px; color:black; " />
+                                <br />
+                                <h4 style="display:inline-block;">Email:</h4>
+                                <input type="text" id="email" style="height:25px;width:150px; color:black; " />
+                                <br />
+                                <div class="button1">
+                                   
+                                    <input type="image" value="submit" onclick="submit()" src="~/images/submit.jpg" style="height:40px; width:110px;" />
+                                    @*<input type="submit" value="Submit" onclick="submit()" style="height:20px; width:120px;" />*@
+                                </div>
+                          
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+        </table>
+
+
+
+        <section id="content1"></section>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+﻿body{
+			font: 300 15px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background:#ffe6e6;
+			margin: 20px;
+		}
+.mySlides {
+    display:none;
+
+}
+
+
+		h2 {
+            font-family:'Bell MT';
+			margin-bottom: 20px;
+			color: #fff;
+			text-transform: uppercase;
+
+			font-size: 30px;
+
+			font-weight: 100;
+			letter-spacing: 10px;
+			text-shadow: 3px 3px 5px #000;
+
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0 0 0 10px;
+			min-width: 460px;
+		}
+
+		nav li {
+			float: left;
+			position: relative;
+			height: 30px;
+			border-radius: 10px 30px 0 0;
+			margin-left: -10px;
+			text-shadow: 1px 1px 0 #bbb;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+			transition: .2s;
+		}
+
+		nav a {
+			display: block;
+			position: relative;
+			width: 90px;
+			height: 20px;
+			padding: 6px 10px 20px 0;
+			border-radius: 10px 30px 0 0;
+			background: #fff;
+			color: #444;
+			text-align: center;
+			text-decoration: none;
+			transition: .2s;
+		}
+
+		nav li:hover {
+			z-index: 1;
+		}
+
+		nav li:hover a {
+			background: #ccc;
+			color: #000;
+		}
+
+		#selected {
+			z-index: 2;
+
+		}
+
+		#selected a {
+			z-index: 3;
+			background: #fff;
+			color: #000;
+			text-shadow: none;
+			font-weight: 500;
+		}
+
+		#content {
+			position: relative;
+			z-index: 1;
+			clear: both;
+            height:50px;
+			min-width: 420px;
+			padding:20px;
+			border-radius: 0px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+			background: #8F2B6F;
+		}
+
+		#content p {
+			margin: 20px 0;
+		}
+        #content1{
+            position: relative;
+			z-index: 1;
+			clear: both;
+            height:50px;
+			min-width:90px;
+			padding:20px;
+			border-radius:0px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+			background: #F3CFE8;
+            opacity:0.2;
+        }
+        .background{
+            opacity:0.5;
+            filter:alpha(opacity=10);
+            position: relative;
+        }
+        .show{
+            display:block;
+            
+        }
+        div#fixedfooter {
+	position:fixed;
+    z-index: 1;
+	bottom:0px;
+	left:10px;
+    height:2%;
+	width:100%;
+	color:gray;
+    background-image:url(../Images/Footer.png);
+	padding:18px;  
+}
+        .thumbnails img {
+		height: 200px;
+		border: 5px solid #555;
+		padding: 1px;
+		margin: 0 10px 10px 0;
+	}
+
+	.thumbnails img:hover {
+		border: 4px solid #00ccff;
+		cursor:pointer;
+	}
+
+	.preview img {
+		border: 4px solid #444;
+		padding: 1px;
+		width: 800px;
+	}
+    .spacing img{
+
+    }
+    .cl { font-size:0; line-height:0; clear:both; display:block; height:0; }
+
+.al { text-align: left; }
+.ar { text-align: right; float:right; position:inherit;direction:rtl;
+}
+.ac { text-align: center; }
+
+h3 { font-size:15px; line-height:18px; color:white; text-transform: uppercase; }
+
+#content { padding-top:50px; }.tabs { height:36px; }
+
+.tabs ul{ list-style-type: none; font-size:14px; text-transform: uppercase; font-weight: bold; }
+.tabs ul li{ float:left; display:inline; margin-right:1px; }
+.tabs ul li a,
+.tabs ul li a span { float:left; height:36px; background:url(images/tab.gif) no-repeat 0 -37px; padding:0 0 0 20px;}
+.tabs ul li a span { background-position:right -37px; padding:0 20px 0 0;}
+.tabs ul li a { position:relative; line-height:36px; color:white; }
+
+
+.tabs ul li a.red { background-position:0 -89px; color:white; }
+.tabs ul li a.red span{ background-position:right -89px;}
+
+.tabs ul li a.active,
+.tabs ul li a:hover { background-position:0 0; color:white; }
+.tabs ul li a.active span,
+.tabs ul li a:hover span{ background-position:right 0;}
+
+#container { background:white url(images/container-t.gif) no-repeat 0 0; padding:40px 30px; }
+
+.items { position:relative; width:960px; margin-right:-50px; padding-bottom:10px; }
+.items ul{ list-style-type: none;}
+.items ul .image{ text-align: center;}
+.items ul li{ float:left; border:dashed 1px white; width:300px; margin:0 25px 15px 0; padding:19px; }
+.items ul li p span{ color:gray;}
+.items ul li p.price{ padding-top:30px; }
+.items ul li p.price strong{ color:gray; font-size:15px;}
+.Center {
+    font-style:italic;
+    font-size:x-large;
+    text-align:left;
+}
+.active{
+font-family:'Bell MT';
+    color:#161515;
+    table-layout:fixed;
+    font-size:larger;
+    align-self:flex-start;
+    border-top-left-radius:4px;
+}
+.last{
+    font-family:'Bell MT';
+    color:#161515;
+    table-layout:fixed;
+    font-size:larger;
+    align-self:flex-end;
+    border-top-left-radius:4px;
+}
+aside{
+    display: inline;
+    float: right;
+    padding: 20px;
+    direction:ltr;
+    position: absolute; top:180px; right:160px;
+    font-size:larger;
+    font-family:'Bell MT';
+}
+.center{
+    float:right; top:90px; right :90px;
+    position:absolute; top:50px;direction:ltr;
+    font:18px;
+
+
+
+}
+section{
+    display:block;
+}
+.Container{
+    width:710px;
+    margin-top:30px auto 0;
+    align-content:center;
+}
+#content2{
+    background:linear-gradient( to top ,#ffe6e6% ,#F3CFE8 0%, #8F2B6F 100%);
+      background:-webkit-linear-gradient(bottom ,#F3CFE8 0% ,#8F2B6F 0%, #ffe6e6% 100%);
+      padding-top:60px;
+          padding-bottom:30px;
+          overflow:hidden;
+}
+
+.gallaryHolder 
+{
+    border: 5px solid;
+    border-color:#ffe6e6;
+    height: 200px;
+    width: 160px;
+    margin-left:50px;
+    padding-left:100px;
+
+}
+
+
+.gallery{
+    width:689px;
+    margin-top:auto;
+}
+.gallery ul{
+    list-style:none;
+}
+.gallery li{
+    float:right ;
+    margin:10px;
+    
+}
+
+.gallery img 
+{
+    display: block;
+    /* padding: 5px; */
+    border: 1px solid;
+    box-shadow: #adad85;
+    width: 150px;
+    height: 126px;
+    
+}
+gallery img :hover{
+    border: 4px solid #00ccff;
+		cursor:pointer;
+    
+}
+.aside2{
+display: inline;
+    float: right;
+    padding: 20px;
+    direction:ltr;
+    position: absolute; top:230px; right:480px;
+    font-size:larger;
+    font-family:'Bell MT';
+}
+
+.aside3{
+display: inline;
+    float: right;
+    padding: 20px;
+    direction:ltr;
+    position: absolute; bottom:-200px; right:160px;
+    font-size:larger;
+    font-family:'Bell MT';
+}
+
+.aside4{
+display: inline;
+    float: right;
+    padding: 20px;
+    direction:ltr;
+    position: absolute; top:290px; right:160px;
+    font-size:larger;
+    font-family:'Bell MT';
+}
+
+.aside5{
+display: inline;
+    float: right;
+    padding: 20px;
+    direction:ltr;
+    position: absolute; top:290px; right:160px;
+    font-size:larger;
+    font-family:'Bell MT';
+}
+.button1 {
+    background-color:none;
+    color: black;
+    align-items:center;
+
+
+}
+.cart{
+			position:fixed;
+			right:0;
+			top:160px;
+			width:300px;
+			height:100%;
+			background:#ff00dc;
+			padding:0px 10px;
+		}
+
+.button2{
+    box-decoration-break:slice;
+    background-color:#F3CFE8;
+    background-origin:border-box;
+
+
+}
+.dl-horizontal{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+
+
+}
+th, td {
+    border: 1px dotted gray;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    padding-left:50px;
+    width:80px;
+    height:40px;
+
+}
